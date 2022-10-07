@@ -66,7 +66,7 @@ echo
     echo -e "${Green} ShivaTheCreator Not installed${clean}"
     echo;;
     
-5)
+6)
 echo
   echo -e "${Green}You pressed Airavat${clean}"
   sleep 1
