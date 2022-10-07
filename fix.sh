@@ -16,6 +16,7 @@ echo -e "
  ${Green} 3.${Yellow} Fatrat
  ${Green} 4.${Yellow} Ahmyth
  ${Green} 5.${Yellow} ShivaRaT
+ ${Green} 6.${Yellow} Airavat
  ${Green} 0.${Yellow} exit
  "
 echo -en " ${Green}[${Yellow}E${Green}] ${White}Please type input: ${Green}"
@@ -64,6 +65,16 @@ echo
     sleep 3
     echo -e "${Green} ShivaTheCreator Not installed${clean}"
     echo;;
+    
+5)
+echo
+  echo -e "${Green}You pressed Airavat${clean}"
+  sleep 1
+  echo -e "${Green} Checking...${clean}"
+    sleep 3
+    echo -e "${Green} Proversion only${clean}"
+#source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/run.sh)
+echo;;
   
 0)
 echo
