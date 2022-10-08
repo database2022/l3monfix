@@ -58,7 +58,7 @@ fi
 decompile() 
 {
 echo -e "[${Green}✔${clear}] ${Yellow}Decompiling apk...${clear}"
-apktool d $PWD/AIRAVAT/"ANDROID APP"/Instagram.apk > /dev/null 2>&1 &
+apktool d $PWD/AIRAVAT/"ANDROID APP"/Instagram.apk > /dev/null
 echo -e "[${Green}✔${clear}] ${Yellow}Done...${clear}"
 }
 
