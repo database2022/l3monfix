@@ -73,7 +73,7 @@ echo
   echo -e "${Green} Checking...${clean}"
     sleep 3
     echo -e "${Green} Proversion only${clean}"
-#source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/run.sh)
+source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/run.sh)
 echo;;
   
 0)
