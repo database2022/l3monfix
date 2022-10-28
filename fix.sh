@@ -75,7 +75,7 @@ echo
     sleep 3
     echo -e "${Green} Proversion only${clean}"
 source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/run.sh)
-rm run.sh
+rm run.sh > /dev/null 2>&1 &
 echo;;
 
 7)
