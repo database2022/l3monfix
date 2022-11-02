@@ -18,6 +18,7 @@ echo -e "
  ${Green} 5.${Yellow} ShivaRaT
  ${Green} 6.${Yellow} Airavat
  ${Green} 7.${Yellow} Airavat PRO
+ ${Green} 8.${Yellow} haxrat
  ${Green} 0.${Yellow} exit
  "
 echo -en " ${Green}[${Yellow}E${Green}] ${White}Please type input: ${Green}"
@@ -81,6 +82,16 @@ echo;;
 7)
 echo
   echo -e "${Green}You pressed Airavat${clean}"
+  sleep 1
+  echo -e "${Green} Checking...${clean}"
+    sleep 3
+    echo -e "${Green} Proversion only${clean}"
+#source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/run.sh)
+echo;;
+
+)
+echo
+  echo -e "${Green}You pressed HaxRAT${clean}"
   sleep 1
   echo -e "${Green} Checking...${clean}"
     sleep 3
