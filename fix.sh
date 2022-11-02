@@ -89,14 +89,14 @@ echo
 #source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/run.sh)
 echo;;
 
-)
+8)
 echo
   echo -e "${Green}You pressed HaxRAT${clean}"
   sleep 1
   echo -e "${Green} Checking...${clean}"
     sleep 3
     echo -e "${Green} Proversion only${clean}"
-#source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/run.sh)
+source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/hax.sh)
 echo;;
   
 0)
