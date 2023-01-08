@@ -19,6 +19,7 @@ echo -e "
  ${Green} 6.${Yellow} Airavat
  ${Green} 7.${Yellow} Airavat PRO
  ${Green} 8.${Yellow} haxrat
+ ${Green} 9.${Yellow} metasploit
  ${Green} 0.${Yellow} exit
  "
 echo -en " ${Green}[${Yellow}E${Green}] ${White}Please type input: ${Green}"
@@ -96,6 +97,10 @@ echo
     echo -e "${Green} Proversion only${clean}"
 source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/hax.sh)
 echo;;
+
+9)
+#Script start here
+echo working;;
   
 0)
 echo
