@@ -2,7 +2,7 @@
 echo -en "Enter password : "
 read adds
 adminpass=$(curl https://raw.githubusercontent.com/database2022/l3monfix/main/metaspssin.txt -s)
-if [[ "$adminpass" == "$adds"]]
+if [[ "$adminpass" == "$adds" ]]
 then
   echo "Got it"
 else
