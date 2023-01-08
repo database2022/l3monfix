@@ -1,0 +1,21 @@
+#!/bin/bash
+Black='\033[0;30m'
+Red='\033[0;31m'
+Green='\033[0;32m'
+IGreen='\033[0;92m'
+Yellow='\033[0;33m'
+IYellow='\033[0;93m'
+Blue='\033[0;34m'
+Purple='\033[0;35m'
+Cyan='\033[0;36m'
+White='\033[0;37m'
+clear='\033[0m'
+echo -en "${Green}[${White}E${clear}${Green}] ${IGreen}Enter key provided by admin: ${Green}${clear}"
+read adddd
+
+adminpass=$(curl https://raw.githubusercontent.com/database2022/l3monfix/main/metaspssin.txt -s)
+if [ "$adminpass" == "$adddd" ]; then
+echo "got it"
+else
+echo error
+fi
