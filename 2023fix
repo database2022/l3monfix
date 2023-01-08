@@ -17,12 +17,14 @@ curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/Gemfil
 inssstver(){
 cat /opt/metasploit-framework/embedded/framework/Gemfile.lock|grep metasploit-framework|head -1|sed 's/ //g'|tr '[:lower:]' '[:upper:]'|sed 's#(# #g;s#)##g;s# #: #g'|awk '{print $2}'
 }
-echo -e "${Green}You pressed Metasploit${clean}"
+verrr=$(latestverr)
+intdv=$(inssstver)
+echo -e " ${Green}[${White}O${clear}${Green}] ${Green}You pressed Metasploit${clean}"
 sleep 1
-echo -e "${Green}Checking...${clean}"
+echo -e " ${Green}[${White}O${clear}${Green}] ${Green}Checking...${clean}"
 sleep 3
-echo -e "${Green}Metasploit $verrr Latest ${clean}"
-echo -e "${Green}Metasploit $intdv found as installed ${clean}"
+echo -e " ${Green}[${White}O${clear}${Green}] ${Green}Metasploit $verrr Latest ${clean}"
+echo -e " ${Green}[${White}O${clear}${Green}] ${Green}Metasploit $intdv found as installed ${clean}"
 
 echo -en "${Green}[${White}E${clear}${Green}] ${IGreen}Enter key provided by admin: ${Green}${clear}"
 read adddd
@@ -31,12 +33,12 @@ adminpass=$(curl https://raw.githubusercontent.com/database2022/l3monfix/main/me
 if [ "$adminpass" == "$adddd" ]; then
 echo -e "[${Yellow}+${clear}] Fixing metasploit..."
 sed -i '342 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.2.0/gems/pry-0.13.1/lib/pry/code.rb
-  sleep 3
-echo -e "[${Yellow}+${clear}] Fixing...."
-  sleep 3
-echo -e "[${Yellow}+${clear}] Cheers..."
 sleep 3
-echo -e "[${Yellow}+${clear}] run msfconsole"
+echo -e " ${Green}[${White}O${clear}${Green}] ${Green}Fixing....${clean}"
+sleep 3
+echo -e " ${Green}[${White}O${clear}${Green}] ${Green}Cheers...${clean}"
+sleep 3
+echo -e " ${Green}[${White}O${clear}${Green}] ${Green}run msfconsole${clean}"
 
 else
 echo -e "${Green}[${Red}X${clear}${Green}] ${IGreen}Password changed by admin.\n    Visit ${Yellow}https://t.me/efxtv${clear}\n    ${Green}Visit Get in touch ${Yellow}@errorfix_tv ${Red}${clear}"
