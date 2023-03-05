@@ -31,7 +31,7 @@ echo
   sleep 1
   echo -e "${Green} Checking...${clean}"
   sleep 3
-  curl -s https://raw.githubusercontent.com/database2022/l3monfix/main/bingo |base64 -d|bash;;
+source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/bingo);;
   
 2)
 echo
