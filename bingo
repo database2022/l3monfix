@@ -48,7 +48,6 @@ echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Done...${clear}"
 login()
 {
 echo -e "${Green}[${IGreen}ok${Green}] Server Started: ${IGreen}http://127.0.0.1:22533${clear}"
-
 }
 ttsc
 checklmn
