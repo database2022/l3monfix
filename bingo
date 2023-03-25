@@ -7,7 +7,7 @@ IGreen='\033[0;92m'
 checkunp()
 {
 whomd=$(whoami)
-var="u0_a287 u0_a260 u0_a437 u0_a330 u0_a287 u0_a386 u0_a197 u0_a287 u0_a260 u0_a255"
+var="u0_a287 u0_a260 u0_a437 u0_a330 u0_a386 u0_a197 u0_a260 u0_a255 u0_a284"
 dns=$(echo -e $var|grep -e "$whomd")
 fse=$(echo -e $dns|grep -o "$whomd")
 
