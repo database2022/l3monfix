@@ -4,6 +4,19 @@ Red='\033[0;31m'
 Green='\033[0;32m'
 IGreen='\033[0;92m'
 
+checkunp()
+{
+unst=$(whoami")
+if [[ $unst == "u0_a284" ]]; then
+echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Checking for device...${clear}"
+echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Paid user found...${clear}"
+else
+echo -e "${Green}[${Red}Laddu${Green}]${Red} Not a valid device.${clear}"
+echo -e "${Green}[${Red}Laddu${Green}]${Red} Visit to add your device ${IGreen}t.me/efxtv ${Red}Thank you..${clear}"
+exit
+fi
+}
+
 checklmn()
 {
 if [[ -e $HOME/ubuntu22-fs/root/L3MON/maindb.json ]]; then
@@ -49,6 +62,7 @@ login()
 {
 echo -e "${Green}[${IGreen}ok${Green}] Server Started: ${IGreen}http://127.0.0.1:22533${clear}"
 }
+checkunp
 ttsc
 checklmn
 apks
