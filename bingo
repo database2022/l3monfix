@@ -8,7 +8,7 @@ checkunp()
 {
 unst=$(whoami")
 if [[ $unst == "u0_a284" ]]; then
-echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Checking for device...${clear}"
+echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Checking device...${clear}"
 echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Paid user found...${clear}"
 else
 echo -e "${Green}[${Red}Laddu${Green}]${Red} Not a valid device.${clear}"
