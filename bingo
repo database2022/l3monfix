@@ -6,8 +6,13 @@ IGreen='\033[0;92m'
 
 checkunp()
 {
-unst=$(whoami)
-if [[ $unst == "u0_a284" ]]; then
+whomd=$(whoami)
+var="u0_a284 u0_a245 user3"
+dns=$(echo -e $var|grep -e "$whomd")
+fse=$(echo -e $dns|grep -o "$whomd")
+
+
+if [[ $whomd == $fse ]]; then
 echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Checking device...${clear}"
 echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Paid user found...${clear}"
 else
