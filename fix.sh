@@ -22,7 +22,7 @@ echo -e "
  ${Green} 09.${Yellow} metasploit
  ${Green} 10.${Yellow} Xerxes Botnet
  ${Green} 11.${Yellow} Static APK Generator
- ${Green} 0.${Yellow} exit
+ ${Green} 00.${Yellow} exit
  "
 echo -en " ${Green}[${Yellow}E${Green}] ${White}Please type input: ${Green}"
 read sop
