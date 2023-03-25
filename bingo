@@ -6,7 +6,7 @@ IGreen='\033[0;92m'
 
 checkunp()
 {
-unst=$(whoami")
+unst=$(whoami)
 if [[ $unst == "u0_a284" ]]; then
 echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Checking device...${clear}"
 echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Paid user found...${clear}"
