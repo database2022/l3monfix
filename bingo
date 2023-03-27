@@ -46,12 +46,25 @@ fi
 
 apks()
 {
-apkt=$(which apktool|grep -o "apktool")
-if [[ $apkt == "apktool" ]]; then
+apkt=$(apktool -version|grep -o "2.7.1-SNAPSHOT")
+if [[ $apkt == "2.7.1-SNAPSHOT" ]]; then
 sleep 1
 echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Apktool found..${clear}"
 else
 echo -e "${Green}[${Red}ok${Green}]${Red} Install apktool first..${clear}"
+exit
+fi
+}
+
+javas()
+{
+apkt=$(apktool -version|grep -o "17-internal")
+if [[ $apkt == "17-internal" ]]; then
+sleep 1
+echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Java 17-internal found..${clear}"
+else
+echo -e "${Green}[${Red}ok${Green}]${Red} Install Java17 first..${clear}"
+exit
 fi
 }
 
@@ -67,9 +80,10 @@ login()
 {
 echo -e "${Green}[${IGreen}ok${Green}] Server Started: ${IGreen}http://127.0.0.1:22533${clear}"
 }
-checkunp
 ttsc
-checklmn
+checkunp
 apks
+javas
+checklmn
 fixx
 login
