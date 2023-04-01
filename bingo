@@ -4,11 +4,22 @@ Red='\033[0;31m'
 Green='\033[0;32m'
 IGreen='\033[0;92m'
 
+ttsc()
+{
+ttscop=$(which pkg|grep -o "termux")
+if [[ $ttscop == "termux" ]]; then
+echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Termux found..${clear}"
+else
+echo -e "${Green}[${Red}Laddu${Green}]${Red} This script will work on termux only..${clear}"
+echo -e "${Green}[${Red}Laddu${Green}]${Red} Thank you..${clear}"
+exit
+fi
+}
+
 checkunp()
 {
 whomd=$(whoami)
-var="u0_a287 u0_a260 u0_a437 u0_a330 u0_a386 u0_a197 u0_a260 u0_a255 u0_a284
-u0_a602 u0_a131"
+var="u0_a287 u0_a260 u0_a437 u0_a330 u0_a386 u0_a197 u0_a260 u0_a255 u0_a284 u0_a602 u0_a131"
 dns=$(echo -e $var|grep -e "$whomd")
 fse=$(echo -e $dns|grep -o "$whomd")
 
@@ -33,17 +44,7 @@ exit
 fi
 }
 
-ttsc()
-{
-ttscop=$(which pkg|grep -o "termux")
-if [[ $ttscop == "termux" ]]; then
-echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Termux found..${clear}"
-else
-echo -e "${Green}[${Red}Laddu${Green}]${Red} This script will work on termux only..${clear}"
-echo -e "${Green}[${Red}Laddu${Green}]${Red} Thank you..${clear}"
-exit
-fi
-}
+
 
 apks()
 {
