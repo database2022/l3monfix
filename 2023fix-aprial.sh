@@ -56,9 +56,12 @@ fi
 
 fix(){
 cd $PREFIX/opt/metasploit-framework > /dev/null 2>&1
-echo -e " ${Green}[${IGreen}✔${clear}${Green}] ${IYellow}Done, run msfconsole...${clear}"
+echo -e " ${Green}[${IGreen}✔${clear}${Green}] ${IYellow}Okay so far...${clear}"
+echo -e " ${Green}[${IGreen}✔${clear}${Green}] ${IYellow}Please wait...${clear}"
 sleep 3
-bundle config build.nio4r --with-cflags="-std=c99" bundle > /dev/null 2>&1
+bundle config build.nio4r --with-cflags="-std=c99" > /dev/null 2>&1
+bundle
+bundle update 
 echo alias msfconsole="\"msfconsole 2>/dev/null\"" >>$PREFIX/etc/bash.bashrc
 rm $PREFIX/bin/msf* > /dev/null 2>&1
 ln -s $PREFIX/opt/metasploit-framework/msfvenom  $PREFIX/bin/ > /dev/null 2>&1
