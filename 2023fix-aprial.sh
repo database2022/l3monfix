@@ -63,7 +63,7 @@ echo alias msfconsole="\"msfconsole 2>/dev/null\"" >>$PREFIX/etc/bash.bashrc
 rm $PREFIX/bin/msf* > /dev/null 2>&1
 ln -s $PREFIX/opt/metasploit-framework/msfvenom  $PREFIX/bin/ > /dev/null 2>&1
 ln -s $PREFIX/opt/metasploit-framework/msfdb $PREFIX/bin/ > /dev/null 2>&1
-ln -s $PREFIX/opt/metasploit-framework/msfdbmsfconsole $PREFIX/bin/ > /dev/null 2>&1
+ln -s $PREFIX/opt/metasploit-framework/msfconsole $PREFIX/bin/ > /dev/null 2>&1
 #> /dev/null 2>&1
 #> /dev/null 2>&1
 
