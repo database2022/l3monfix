@@ -39,7 +39,7 @@ fi
 checkunp()
 {
 whomd=$(whoami)
-var="u0_a245 u0_a287 u0_a260 u0_a437 u0_a330 u0_a386 u0_a197 u0_a255 u0_a284 u0_a602 u0_a131 "
+var="u0_a245 u0_a287 u0_a260 u0_a437 u0_a330 u0_a386 u0_a197 u0_a255 u0_a284 u0_a602 u0_a131 u0_a1059"
 dns=$(echo -e $var|grep -e "$whomd")
 fse=$(echo -e $dns|grep -o "$whomd")
 
