@@ -60,8 +60,8 @@ fi
 
 javas()
 {
-apkt=$(apktool -version|grep -o "17-internal")
-if [[ $apkt == "17-internal" ]]; then
+javat=$(java -version|grep -o "17-internal")
+if [[ $javat == "17-internal" ]]; then
 sleep 1
 echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Java 17-internal found..${clear}"
 else
