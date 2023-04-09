@@ -60,8 +60,8 @@ fi
 
 javas()
 {
-javat=$(java -version|grep -o "17-internal")
-if [[ $javat == "17-internal" ]]; then
+javat=$(which java|grep -o "java")
+if [[ $javat == "java" ]]; then
 sleep 1
 echo -e "${Green}[${IGreen}ok${Green}] ${IGreen}Java 17-internal found..${clear}"
 else
