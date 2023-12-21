@@ -11,6 +11,17 @@ Cyan='\033[0;36m'
 White='\033[0;37m'
 clear='\033[0m'
 
+downloadinggg()
+{
+if [[ -d $PWD/AIRAVAT" ]]
+then
+echo -e "[${Green}✔${clear}] ${Yellow}AIRAVAT DIRECTORY ALREADY EXIST${clear}"
+else
+wget https://github.com/efxtv/EFX-Tv-Bookmarks/raw/main/bin/AIRAVAT.zip -O ~/AIRAVAT.zip -q --show-progress
+unzip AIRAVAT.zip 1>/dev/null
+fi
+}
+
 web() 
 {
 if [[ -d $PWD/AIRAVAT/"WEB PANEL" ]]
@@ -156,7 +167,8 @@ echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
 }
-
+downloadinggg
+sleep 0.5
 web
 sleep 0.5
 const
