@@ -125,7 +125,7 @@ sed -i "s#databaseURL#$databaseurlll#g" $PWD/Airavatpro/smali_classes3/lizord/de
 }
 
 tars(){
-tar -cvf Airavat_shared.tar Airavatpro 1>/dev/null
+tar -cvf Airavat_shared.tar Airavatpro > /dev/null 2>&1
 }
 
 compilee(){
