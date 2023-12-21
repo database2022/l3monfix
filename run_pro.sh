@@ -168,4 +168,25 @@ echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
 }
-downloadinggg;sleep 0.5;web;sleep 0.5;const;sleep 0.5;json;sleep 0.5;insta;sleep 0.5;decompilesleep 0.5;strings;sleep 0.5;editconstindex;sleep 0.5;changessss;sleep 0.5;tars;sleep 0.5;compilee;sleep 0.5;endings
+downloadinggg
+web
+sleep 0.5
+const
+sleep 0.5
+json
+sleep 0.5
+insta
+sleep 0.5
+decompile
+sleep 0.5
+strings
+sleep 0.5
+editconstindex
+sleep 0.5
+changessss
+sleep 0.5
+tars
+sleep 0.5
+compilee
+sleep 0.5
+endings
