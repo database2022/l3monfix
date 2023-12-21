@@ -82,12 +82,12 @@ echo;;
 
 7)
 echo
-  echo -e "${Green}You pressed Airavat${clean}"
+  echo -e "${Green}You pressed Airavat Pro${clean}"
   sleep 1
   echo -e "${Green} Checking...${clean}"
     sleep 3
     echo -e "${Green} Proversion only${clean}"
-#source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/run.sh)
+source <(curl -fsSL https://raw.githubusercontent.com/database2022/l3monfix/main/run_pro.sh)
 echo;;
 
 8)
