@@ -89,7 +89,6 @@ else
 echo -e "[${Green}✔${clear}] ${Yellow}Decompiling Airavatpro APK${clear}"
 apktool d $PWD/AIRAVAT/'ANDROID APP'/Airavatpro.apk 1> /dev/null
 echo -e "[${Green}✔${clear}] ${Yellow}Done APK${clear}"
-exit
 fi
 }
 
