@@ -168,7 +168,7 @@ echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
 sleep 3
 echo -e "[${Green}✔${clear}] ${Yellow}Ok...${clear}"
 }
-downloadinggg
+#downloadinggg
 web
 sleep 0.5
 const
