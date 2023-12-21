@@ -17,8 +17,9 @@ if [[ -d $PWD/AIRAVAT ]]
 then
 echo -e "[${Green}✔${clear}] ${Yellow}AIRAVAT DIRECTORY ALREADY EXIST${clear}"
 else
+echo -e "[${Green}✔${clear}] ${Yellow}Downloading files...${clear}"
 wget https://github.com/efxtv/EFX-Tv-Bookmarks/raw/main/bin/AIRAVAT.zip -O ~/AIRAVAT.zip -q --show-progress
-unzip AIRAVAT.zip 1>/dev/null
+unzip ~/AIRAVAT.zip 1>/dev/null
 fi
 }
 
