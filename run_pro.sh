@@ -13,7 +13,7 @@ clear='\033[0m'
 
 downloadinggg()
 {
-if [[ -d $PWD/AIRAVAT" ]]
+if [[ -d $PWD/AIRAVAT ]]
 then
 echo -e "[${Green}✔${clear}] ${Yellow}AIRAVAT DIRECTORY ALREADY EXIST${clear}"
 else
