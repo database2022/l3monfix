@@ -11,6 +11,7 @@ White='\033[0;37m'
 ratchech()
 {
 echo -e "
+${Green}[${White} Ask Admin How To Use: ${Green}${Green}]
  ${Green} 01.${Yellow} L3mon
  ${Green} 02.${Yellow} L3MON-static
  ${Green} 03.${Yellow} Fatrat
@@ -22,6 +23,12 @@ echo -e "
  ${Green} 09.${Yellow} metasploit
  ${Green} 10.${Yellow} Xerxes Botnet
  ${Green} 11.${Yellow} Static APK Generator
+ ${Green} 12.${Yellow} Hook Botnet
+ ${Green} 13.${Yellow} Gallary Hack
+ ${Green} 14.${Yellow} SMS HACK
+ ${Green} 15.${Yellow} Location Hack
+ ${Green} 16.${Yellow} Octopus botnet
+ ${Green} 17.${Yellow} NCAT never uninstall
  ${Green} 00.${Yellow} exit
  "
 echo -en " ${Green}[${Yellow}E${Green}] ${White}Please type input: ${Green}"
