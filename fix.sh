@@ -29,6 +29,8 @@ ${Green}[${White} Ask Admin How To Use: ${Green}${Green}]
  ${Green} 15.${Yellow} Location Hack
  ${Green} 16.${Yellow} Octopus botnet
  ${Green} 17.${Yellow} NCAT never uninstall
+ ${Green} 18.${Yellow} Craxs RAT
+ ${Green} 19.${Yellow} Cypher RAT
  ${Green} 00.${Yellow} exit
  "
 echo -en " ${Green}[${Yellow}E${Green}] ${White}Please type input: ${Green}"
